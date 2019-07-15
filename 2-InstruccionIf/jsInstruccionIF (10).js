@@ -4,7 +4,20 @@ function mostrar()
 	var nota;
  if(nota=Math.floor (Math.random() *10) +1)
 	{
-		alert("EXCELENTE");
+		if(nota>=9)
+		{
+			alert(nota + " EXCELENTE");
+		}
+		if (nota>4 && nota<9)
+		{
+			alert(nota + " APROBÓ")
+		}
+		if(nota<4)
+		{
+			alert(nota + " Vamos, la proxima se puede")
+		}
+
+
 	}
 
 	
