@@ -2,17 +2,40 @@ function mostrar()
 {
 
 	var contador=0;
-	//declarar contadores y variables 
+	var numero;
+	var numeroDos;
+	var suma;
+	alert(numero);
 	
-	var respuesta="si";
+	numeroDos=12;
+	suma=numero*numeroDos;
+	alert(suma);
+	suma="3";//bien
+	suma=3;//bien
+	suma="lalala";//error
 
-	while(respuesta!="no")
+	while(isNaN(suma))
 	{
-		
-	
+		alert("error");
+		suma=prompt("error, reingrese solo numeros");
 	}
+	alert("ingreso correcto "+suma);
+	
+	/*
+	if(isNaN(suma))
+	{
+		alert("error");
+
+	}else{
+		alert("bien");
+	}*/
+
+
+	
+	
 
 
 
 
-}//FIN DE LA FUNCIÓN
+}
+
