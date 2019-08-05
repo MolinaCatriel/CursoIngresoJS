@@ -1,7 +1,7 @@
 function mostrar() {
 	var numero;
-	var maximo = 0;
-	var minimo = 0;
+	var maximo;
+	var minimo;
 	var seguir;
 	var contador = 0
 
@@ -11,15 +11,16 @@ function mostrar() {
 			numero = prompt("Error, ingrese un numero");
 		}
 
-		if (contador == 1) {
+		if (contador == 0) {
 			maximo = numero;
 			minimo = numero;
 		} else {
 			if (numero > maximo) {
 				maximo = numero;
 			}
-			else {
-				if (numero > minimo)
+			
+				if (numero < minimo)
+			{
 					minimo = numero;
 			}
 
